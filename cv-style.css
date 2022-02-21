@@ -120,7 +120,7 @@ p {
     position: fixed;
     width: 100%;
     height: var(--header-size);
-    background-image: linear-gradient(to right, rgb(255, 165, 0) , rgb(255, 255, 0));;
+    background-image: linear-gradient(to right, rgb(255, 165, 0) , rgb(255, 255, 0));
     box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
     z-index: 999;
 }
@@ -288,6 +288,7 @@ td:first-child {
     padding-bottom: 10px;
 }
 
+
 .content-main-skills > h3 {
     float: left;
     width: 25%;
@@ -312,6 +313,17 @@ td:first-child {
       background: linear-gradient(90deg, var(--star-background) var(--percent), var(--star-color) var(--percent));
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
+}
+
+.content-main-passion  {
+
+    padding-bottom: 25px;
+}
+
+.content-main-passion span:hover {
+    font-weight: bolder;
+    cursor: pointer;
+    text-transform: uppercase;
 }
   
 
@@ -584,6 +596,18 @@ td:first-child {
     .experience-content > p:nth-child(4) {
         padding-top: 90px;
     }
+
+    .content-main-passion  {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    
+    .content-main-passion span:hover {
+        font-weight: bolder;
+        cursor: pointer;
+        text-transform: uppercase;
+    }
+      
 
     .content-main-skills > h3 {
         float: left;
@@ -896,6 +920,8 @@ td:first-child {
 
     #content-main-skills {
         width: 100%;
+        float: left;
+        padding-bottom: 25px;
     }
 
     #content-main-skills > h3 {
@@ -923,6 +949,18 @@ td:first-child {
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
     }
+
+    .content-main-passion  {
+        padding-top: 250px;
+        padding-bottom: 25px;
+    }
+    
+    .content-main-passion span:hover {
+        font-weight: bolder;
+        cursor: pointer;
+        text-transform: uppercase;
+    }
+      
       
 
     .content-certificates-wrapper {

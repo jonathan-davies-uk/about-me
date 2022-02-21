@@ -60,7 +60,7 @@
           
         <div class="content">
             <div class="content-header">
-                <h1>Jonathan Davies / Spud</h1>
+                <h1 class="me">Jonathan Davies / Spud</h1>
                 <h2>Unified Communications Engineer @ Waterstons | Microsoft Teams Specialist</h2>
             </div>
             <div class="content-main">
@@ -192,6 +192,12 @@
                     <h3>Active Directory</h3>
                     <div class="stars" style="--rating: 4.25;"></div>
                 </div>
+                <div class="content-main-passion">
+                    <h2>My Passion</h2>
+                    <h3>Web design and development</h3>
+                    <p>Who do you think made this website? You guessed right - <span onclick="MakeMeHighlighted()">this guy.</span></p>
+                    <p>Over the years I've had a passion for developing and designing websites. I follow the philosophy of, if you make someone think when they are on a website of where to look, click or go browse to find something - they've already closed the website and moved on. Web design should be simple, with an ease of flow - anything more than two clicks away than you've likely already lost the customer. I've designed multiple websites, including for a golf club and a roofer.</p>
+                </div>
             </div>
             <div class="content-certificates-wrapper">
                 <h2>Vendor Certificates</h2>
@@ -229,6 +235,14 @@
                 </ul>
             </div>
         </div>
+        <script>
+            function MakeMeHighlighted() {
+                document.getElementsByClassName("sidebar-top-image")[0].style.border = "5px solid purple";
+                document.getElementsByClassName("sidebar")[0].style.backgroundColor = "purple";
+                document.getElementsByClassName("me")[0].style.textTransform = "uppercase"
+                document.getElementsByClassName("content-header")[0].style.backgroundImage = "linear-gradient(to right, purple , rgb(255, 255, 0))";
+            }
+        </script>
     </body>
 
 </html>
