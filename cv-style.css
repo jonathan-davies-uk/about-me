@@ -361,6 +361,7 @@ td:first-child {
     
     .content-header h2 {
         padding-left: 155px;
+        padding-right: 200px;
         margin-top: 10px;
         word-wrap: break-word;
     }
@@ -669,6 +670,7 @@ td:first-child {
     
     .content-header h2 {
         padding-left: 25px;
+        padding-right: 50px;
         margin-top: 10px;
         word-wrap: break-word;
     }
