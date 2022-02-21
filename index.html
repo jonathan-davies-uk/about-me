@@ -195,7 +195,7 @@
                 <div class="content-main-passion">
                     <h2>My Passion</h2>
                     <h3>Web design and development</h3>
-                    <p>Who do you think made this website? You guessed right - <span onclick="MakeMeHighlighted()">this guy.</span></p>
+                    <p>Who do you think made this website? You guessed right - <span onmouseover="MakeMeHighlighted()" onmouseleave="MakeMeUnhighlighted()">this guy.</span></p>
                     <p>Over the years I've had a passion for developing and designing websites. I follow the philosophy of, if you make someone think when they are on a website of where to look, click or go browse to find something - they've already closed the website and moved on. Web design should be simple, with an ease of flow - anything more than two clicks away than you've likely already lost the customer. I've designed multiple websites, including for a golf club and a roofer.</p>
                 </div>
             </div>
@@ -236,10 +236,16 @@
             </div>
         </div>
         <script>
+            function MakeMeUnhighlighted() {
+                document.getElementsByClassName("sidebar-top-image")[0].style.border = "5px solid #f1f1f1";
+                document.getElementsByClassName("sidebar")[0].style.backgroundColor = "#27292b";
+                document.getElementsByClassName("me")[0].style.textTransform = "none";
+                document.getElementsByClassName("content-header")[0].style.backgroundImage = "linear-gradient(to right, rgb(255, 165, 0) , rgb(255, 255, 0))";
+            }
             function MakeMeHighlighted() {
                 document.getElementsByClassName("sidebar-top-image")[0].style.border = "5px solid purple";
                 document.getElementsByClassName("sidebar")[0].style.backgroundColor = "purple";
-                document.getElementsByClassName("me")[0].style.textTransform = "uppercase"
+                document.getElementsByClassName("me")[0].style.textTransform = "uppercase";
                 document.getElementsByClassName("content-header")[0].style.backgroundImage = "linear-gradient(to right, purple , rgb(255, 255, 0))";
             }
         </script>
