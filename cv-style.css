@@ -1,5 +1,6 @@
 :root {
     --sidebar-border: 4px;
+    --sidebar-width: 500px;
     --header-size: 200px;
     --mobile-p: 100%;
     --tablet-p: 130%;
@@ -7,7 +8,8 @@
     --tablet-star-size: 30px;
     --mobile-star-size: 30px;
     --star-color: grey;
-    --star-background: orange
+    --star-background: orange;
+    --content-background: white;
 }
 
 /* width */
@@ -41,23 +43,28 @@ h1 {
     text-align: left;
     font-family: Ubuntu, sans-serif;
     font-weight: bolder;
-    font-size: 500%;
+    font-size: 4.5vw;
     padding-left: 50px;
+    padding-right: 100px;
     padding-top: 50px;
+    word-break: break-word;
 }
 
 .content-header h2 {
     padding-left: 50px;
     margin-top: 20px;
+    word-break: break-word;
+    word-wrap: break-word;
 }
 
 h2 {
     text-align: left;
     font-family: Ubuntu, sans-serif;
-    font-size: 175%;
+    font-size: 1.5vw;
     margin-top: 30px;
     margin-bottom: 15px;
     text-transform: uppercase;font-weight: bolder;
+    word-break: break-word;
 }
 
 h3 {
@@ -84,7 +91,7 @@ p {
 .sidebar {
     margin: 0;
     padding: 0;
-    width: 500px;
+    width: var(--sidebar-width);
     background-color: /*#f1f1f1*/#27292b;
     position: fixed;
     height: 100%;
@@ -111,14 +118,14 @@ p {
   }
   
 .content {
-    margin-left: calc(500px + var(--sidebar-border));
-    width: calc(100% - 500px) + var(--sidebar-border);
-    background-color: rgb(0, 0, 0, 0.05);
-  }
+    margin-left: calc(var(--sidebar-width) + var(--sidebar-border));
+    overflow: hidden;
+    width: calc(100% - var(--sidebar-width)) + var(--sidebar-border);
+}
 
 .content-header {
     position: fixed;
-    width: 100%;
+    width: calc(100% - var(--sidebar-width));
     height: var(--header-size);
     background-image: linear-gradient(to right, rgb(255, 165, 0) , rgb(255, 255, 0));
     box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
@@ -131,6 +138,7 @@ p {
     padding-top: var(--header-size);
     width: calc(75% - 100px);
     float: left;
+    background-color: var(--content-background);
 }
 
 .sidebar-top-wrapper {
@@ -330,7 +338,7 @@ td:first-child {
 .content-certificates-wrapper {
     width: calc(25% - 25px);
     padding-top: var(--header-size);
-    background-color: white;
+    background-color: var(--content-background);
     float: left;
     padding-right: 25px;
 }
@@ -519,6 +527,7 @@ td:first-child {
         padding-top: 25px;
         width: calc(100% - 50px);
         float: left;
+        background-color: var(--content-background);
     }
 
     .experience {
@@ -650,11 +659,11 @@ td:first-child {
     .content-certificates-wrapper {
         width: calc(100% - 50px);
         padding-top: 25px;
-        background-color: white;
         float: left;
         padding-right: 25px;
         padding-left: 25px;
         padding-bottom: 10px;
+        background-color: var(--content-background);
     }
     
     .content-certificates-wrapper > ul {
@@ -840,6 +849,7 @@ td:first-child {
         padding-top: 25px;
         width: calc(100% - 50px);
         float: left;
+        background-color: var(--content-background);
     }
 
     .experience {
@@ -966,7 +976,7 @@ td:first-child {
     .content-certificates-wrapper {
         width: calc(100% - 50px);
         padding-top: 25px;
-        background-color: white;
+        background-color: var(--content-background);
         float: left;
         padding-right: 25px;
         padding-left: 25px;
