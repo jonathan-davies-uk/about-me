@@ -1,14 +1,14 @@
 :root {
-    --h1-font-size: 300%;
+    --h1-font-size: 400%;
     --h2-font-size: 125%;
     --h3-font-size: 100%;
     --h4-font-size: 100%;
     --p-font-size: 100%;
-    --content-p: 130%;
+    --content-p: 120%;
     --content-header-h1-padding: 50px 100px 0px 50px;
-    --content-header-h2-padding: 0px 100px 0px 50px;
+    --content-header-h2-padding: 15px 100px 0px 50px;
 
-    --global-hx-margin: 30px 0px 15px 0px;
+    --global-hx-margin: 10px 0px 15px 0px;
 
     --sidebar-position: fixed;
     --sidebar-padding-top: 0px;
@@ -19,7 +19,7 @@
     --sidebar-top-wrapper-height: 0px;
     --sidebar-profile-img-size: 250px;
     --sidebar-profile-position-margin-left: 125px;
-    --sidebar-profile-position-margin-top: 30px;
+    --sidebar-profile-position-margin-top: 10px;
     --sidebar-profile-border: 5px;
     --sidebar-bottom-wrapper-padding: 120px 25px 0px 25px;
 
