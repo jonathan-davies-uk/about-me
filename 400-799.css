@@ -1,0 +1,229 @@
+:root {
+    --mobile-h1-font-size: 150%;
+    --mobile-h2-font-size: 105%;
+    --mobile-h3-font-size: 100%;
+    --mobile-h4-font-size: 100%;
+    --mobile-p-font-size: 100%;
+    --mobile-content-p: 100%;
+    --mobile-content-header-h1-padding: 40px 75px 0px 75px;
+    --mobile-content-header-h2-padding: 0px 75px 0px 75px;
+    --mobile-global-hx-margin: 15px 0px 7.5px 0px;
+    --mobile-sidebar-top-wrapper-height: 200px;
+    --mobile-content-top-header-height: 150px;
+    --mobile-sidebar-profile-img-size: 150px;
+    --mobile-sidebar-profile-position-margin-left: 75px;
+    --mobile-sidebar-profile-position-margin-top: 75px;
+    --mobile-sidebar-profile-border: 2.5px;
+    --mobile-sidebar-bottom-wrapper-padding: 100px 25px 0px 25px;
+    --mobile-content-padding-top: 0px;
+    --mobile-content-padding-left-right: 50px;
+    --mobile-content-padding-bottom: 0px;
+    --mobile-content-header-height: 150px;
+    --mobile-star-size: 30px;
+    --mobile-star-background: orange;
+    --mobile-tablet-star-color: grey;
+}
+
+h1 {
+    font-size: var(--mobile-h1-font-size);
+    padding: var(--mobile-content-header-h1-padding);
+}
+
+.content-header h2 {
+    padding: var(--mobile-content-header-h2-padding);
+}
+
+h2 {
+    font-size: var(--mobile-h2-font-size);
+    margin: var(--mobile-global-hx-margin);
+}
+
+h3 {
+    font-size: var(--mobile-h3-font-size);
+    margin: var(--mobile-global-hx-margin);
+}
+
+h4 {
+    font-size: var(--mobile-h4-font-size);
+    margin: var(--mobile-global-hx-margin);
+}
+
+p {
+    font-size: var(--mobile-p-font-size);
+}
+
+
+.sidebar {
+    padding: var(--mobile-content-top-header-height) 0px 0px 0px;
+}
+
+.sidebar-top-image {
+    width: var(--mobile-sidebar-profile-img-size);
+    height: var(--mobile-sidebar-profile-img-size);
+    border: var(--mobile-sidebar-profile-border) solid #f1f1f1;
+    margin-left: var(--mobile-sidebar-profile-position-margin-left);
+    margin-top: var(--mobile-sidebar-profile-position-margin-top);
+}
+
+.sidebar-bottom-wrapper {
+    padding: var(--mobile-sidebar-bottom-wrapper-padding);
+}
+
+tr {
+    font-size: calc(var(--mobile-content-p) - 20%);
+}
+
+.content {
+    background-color: rgb(0, 0, 0, 0.05);
+
+    margin-top: 0px;
+    width: 100%;
+}
+
+.content-main {
+    padding-top: var(--mobile-content-padding-top);
+    padding-left: var(--mobile-content-padding-left-right);
+    padding-right: var(--mobile-content-padding-left-right);
+    padding-bottom: var(--mobile-content-padding-bottom);
+    width: calc(100% - calc(var(--mobile-content-padding-left-right) * 2));
+    background-color: var(--content-background);
+}
+
+.experience-content>ul {
+    font-size: var(--mobile-p);
+}
+
+.stars {
+    font-size: var(--mobile-star-size);
+}
+
+.stars::before {
+    background: linear-gradient(90deg, var(--mobile-star-background) var(--percent), var(--mobile-star-color) var(--percent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.content-main-skills>h3 {
+    line-height: var(--mobile-star-size);
+}
+
+.content-main-skills>div {
+    line-height: var(--mobile-star-size);
+}
+
+
+.content-certificates-wrapper {
+    width: calc(100% - calc(var(--mobile-content-padding-left-right)*2));
+    background-color: var(--content-background);
+    padding-top: var(--mobile-content-padding-top);
+    padding-left: var(--mobile-content-padding-left-right);
+    padding-right: var(--mobile-content-padding-left-right);
+    padding-bottom: var(--mobile-content-padding-bottom);
+}
+
+.sidebar-top-wrapper {
+    height: 100px;
+    background-image: url("images/potatos-hd.jpg");
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: cover;
+    /* Resize the background image to cover the entire container */
+    box-shadow: none;
+}
+
+.sidebar-bottom-education-content {
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.sidebar-bottom-education-content>h3:nth-child(1) {
+    float: left;
+    text-align: left;
+    width: 70%;
+    padding-bottom: 10px;
+}
+
+.sidebar-bottom-education-content>h3:nth-child(2) {
+    font-style: italic;
+    text-align: right;
+    float: right;
+    width: 30%;
+
+    padding-bottom: 10px;
+}
+
+.sidebar-bottom-references {
+    padding-bottom: 20px;
+}
+
+.sidebar a {
+    text-align: center;
+    float: none;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td {
+    padding: 10px;
+}
+
+td:first-child {
+    text-align: right;
+    border-right: 1px solid white;
+}
+
+tr {
+    font-size: calc(var(--mobile-p) - 20%);
+}
+
+.content {}
+
+.content-header {
+    height: var(--mobile-content-top-header-height);
+    bottom: calc(100% - var(--mobile-sidebar-top-wrapper-height));
+}
+
+.content-main {
+    padding-top: var(--mobile-content-padding-top);
+    padding-left: var(--mobile-content-padding-left-right);
+    padding-right: var(--mobile-content-padding-left-right);
+    padding-bottom: var(--mobile-content-padding-bottom);
+    width: calc(100% - calc(var(--tmobile-content-padding-left-right) * 2));
+    background-color: var(--content-background);
+}
+
+.experience-content>ul {
+    font-size: var(--mobile-p);
+}
+
+.stars {
+    font-size: var(--mobile-star-size);
+}
+
+.stars::before {
+    background: linear-gradient(90deg, var(--mobile-star-background) var(--percent), var(--mobile-star-color) var(--percent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.content-main-skills>h3 {
+    line-height: var(--mobile-star-size);
+}
+
+.content-main-skills>div {
+    line-height: var(--mobile-star-size);
+}
+
+.content-certificates-wrapper {
+    width: calc(100% - calc(var(--mobile-content-padding-left-right)*2));
+    background-color: var(--content-background);
+    padding-top: var(--mobile-content-padding-top);
+    padding-left: var(--mobile-content-padding-left-right);
+    padding-right: var(--mobile-content-padding-left-right);
+    padding-bottom: var(--mobile-content-padding-bottom);
+}
