@@ -503,7 +503,7 @@ td:first-child {
     padding-left: var(--content-padding-left-right);
     padding-right: var(--content-padding-left-right);
     padding-bottom: var(--content-padding-bottom);
-    padding-top: var(--content-padding-top);
+    padding-top: var(--content-padding-var-links);
     background-color: var(--content-background);
     float: left;
 }
