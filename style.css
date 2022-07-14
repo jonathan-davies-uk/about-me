@@ -24,6 +24,11 @@
     --sidebar-bottom-wrapper-padding: 120px 25px 0px 25px;
 
     --content-width: 75%;
+    --content-main-experience-wrapper-header-height: 100px;
+    --content-logo-roc-width: 210px;
+    --content-logo-roc-height: 90px;
+    --content-logo-waterstons-width: 100px;
+    --content-logo-waterstons-height: 100px;
     --content-top-header-height: 200px;
     --content-padding-top: 225px;
     --content-padding-var-links: 15px;
@@ -303,9 +308,27 @@ td:first-child {
     height: auto;
 }
 
-.content-main-experience-wrapper h3 {
+.content-main-experience-wrapper-header {
+    height: var(--content-main-experience-wrapper-header-height);
+}
+
+.content-main-experience-wrapper-header img {
+    float: right;
+}
+
+.content-main-experience-wrapper-header h3 {
     float: left;
     line-height: 60px;
+}
+
+.logo-roc {
+    width: var(--content-logo-roc-width);
+    height: var(--content-logo-roc-height);
+}
+
+.logo-waterstons {
+    width: var(--content-logo-waterstons-width);
+    height: var(--content-logo-waterstons-height);
 }
 
 .content-main-experience-wrapper-timeline {
@@ -750,6 +773,8 @@ td:first-child {
         --sidebar-bottom-wrapper-padding: 75px 25px 15px 25px;
 
         --content-width: 100%;
+        --content-logo-roc-width: 100px;
+        --content-logo-roc-height: 40px;
         --content-top-header-height: 150px;
         --content-padding-top: 0px;
         --content-padding-left-right: 15px;
@@ -794,6 +819,8 @@ td:first-child {
         --sidebar-bottom-wrapper-padding: 75px 5px 15px 5px;
 
         --content-width: 100%;
+        --content-logo-roc-width: 100px;
+        --content-logo-roc-height: 40px;
         --content-top-header-height: 125px;
         --content-padding-top: 0px;
         --content-padding-left-right: 15px;
