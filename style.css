@@ -1,10 +1,10 @@
 :root {
-    --h1-font-size: 400%;
-    --h2-font-size: 125%;
-    --h3-font-size: 100%;
-    --h4-font-size: 100%;
-    --p-font-size: 100%;
-    --content-p: 120%;
+    --h1-font-size: 4em;
+    --h2-font-size: 1.5em;
+    --h3-font-size: 1.35em;
+    --h4-font-size: 1.1em;
+    --p-font-size: 1em;
+    --content-p: 1em;
     --content-header-h1-padding: 50px 100px 0px 50px;
     --content-header-h2-padding: 15px 100px 0px 50px;
 
@@ -43,6 +43,7 @@
     /* Content Links */
     --content-links-padding: 15px;
     --content-padding-top: calc(var(--content-top-header-height) + 25px);
+    --content-links-display: inline;
 
     /* Content Certificate */
     --content-certificate-width: 25%;
@@ -119,6 +120,7 @@ h3 {
     font-family: Ubuntu, sans-serif;
     font-size: var(--h3-font-size);
     margin: var(--global-hx-margin);
+    font-weight: bolder;
 }
 
 h4 {
@@ -218,14 +220,14 @@ td:first-child {
     border-bottom: 1px solid rgba(255, 255, 255, 0.25);
 }
 
-.sidebar-bottom-education-content>h3:nth-child(1) {
+.sidebar-bottom-education-content>h4:nth-child(1) {
     float: left;
     text-align: left;
     width: 50%;
     padding-bottom: 10px;
 }
 
-.sidebar-bottom-education-content>h3:nth-child(2) {
+.sidebar-bottom-education-content>h4:nth-child(2) {
     font-style: italic;
     text-align: right;
     float: right;
@@ -263,6 +265,7 @@ td:first-child {
     background-color: #e7e7e7;
     padding: calc(var(--content-padding-top) - var(--content-links-padding)) var(--content-padding-left-right) calc(var(--content-padding-bottom) + var(--content-links-padding)) var(--content-padding-left-right);
     border-bottom: 1px solid rgba(255, 165, 0, 16%);
+    margin: auto;
 }
 .content-links img {
     position: relative;
@@ -281,6 +284,10 @@ td:first-child {
 
 .content-links a:hover {
     color: var(--star-background);
+}
+
+.content-links span {
+    display: var(--content-links-display);
 }
 
 
@@ -457,13 +464,13 @@ td:first-child {
     float: left;
 }
 
-.content-main-skills>h2 {
+.content-main-skills>h3 {
     float: left;
     width: 100%;
     text-align: left;
 }
 
-.content-main-skills>h3 {
+.content-main-skills>h4 {
     text-align: left;
     width: 25%;
     float: left;
@@ -474,13 +481,13 @@ td:first-child {
     float: left;
 }
 
-.content-main-skills>h2 {
+.content-main-skills>h3 {
     float: right;
     width: 100%;
     text-align: left;
 }
 
-.content-main-skills>h3 {
+.content-main-skills>h4 {
     line-height: var(--star-size);
     float: left;
     width: var(--content-main-skills-h3-width);
@@ -555,9 +562,9 @@ td:first-child {
     font-weight: normal;
 }
 
-.content-certificates-wrapper p {
+.content-certificates-wrapper p:last-child {
     font-style: italic;
-    padding-bottom: 25px;
+    padding-bottom: 15px;
     padding-right: 20px;
     border-bottom: 1px solid rgb(0 0 0 / 16%);
 }
@@ -664,44 +671,62 @@ td:first-child {
 /* Tablet friendly */
 /* 800-1023 */
 @media (min-device-width: 800px) and (max-device-width: 1023px) {
-    :root {
-        --h1-font-size: 200%;
-        --h2-font-size: 150%;
-        --h3-font-size: 100%;
-        --h4-font-size: 100%;
-        --p-font-size: 100%;
-        --content-p: 130%;
-        --content-header-h1-padding: 50px 100px 0px 50px;
-        --content-header-h2-padding: 0px 100px 0px 50px;
+:root {
+        --h1-font-size: 1.9em;
+        --h2-font-size: 1.5em;
+        --h3-font-size: 1.25em;
+        --h4-font-size: 1.1em;
+        --p-font-size: 1em;
+        --content-p: 1em;
+        --content-header-h1-padding: 25px 50px 0px 25px;
+        --content-header-h2-padding: 0px 50px 0px 25px;
 
-        --global-hx-margin: 30px 0px 15px 0px;
+        --global-hx-margin: 15px 0px 5px 0px;
 
+        /* Sidebar */
         --sidebar-position: relative;
-        --sidebar-padding-top: 200px;
+        --sidebar-padding-top: 150px;
         --sidebar-border: none;
         --sidebar-width: 100%;
         --sidebar-margin-left: 0;
         --sidebar-width-calc: 100%;
-        --sidebar-top-wrapper-height: 200px;
-        --sidebar-profile-img-size: 250px;
+        --sidebar-top-wrapper-height: 150px;
+        --sidebar-profile-img-size: 125px;
         --sidebar-profile-position-margin-left: 30px;
-        --sidebar-profile-position-margin-top: 30px;
-        --sidebar-profile-border: 5px;
-        --sidebar-bottom-wrapper-padding: 120px 25px 25px 25px;
+        --sidebar-profile-position-margin-top: 80px;
+        --sidebar-profile-border: 2.5px;
+        --sidebar-bottom-wrapper-padding: 75px 25px 15px 25px;
 
+        /* Content Global */
+        --content-background: white;
         --content-width: 100%;
-        --content-top-header-height: 200px;
-        --content-padding-top: 0px;
         --content-padding-left-right: 50px;
         --content-padding-bottom: 25px;
-        --content-certificate-width: 100%;
-        --content-main-skills-h3-width: 25%;
-        --content-main-skills-div-width: 75%;
+        --content-main-experience-wrapper-header-height: 100px;
 
+        /* Content Header .content-header */
+        --content-top-header-height: 150px;
+
+        /* Content Experience */
+        --content-logo-roc-width: 100px;
+        --content-logo-roc-height: 40px;
+        --content-logo-waterstons-width: 100px;
+        --content-logo-waterstons-height: 100px;
+
+        /* Content Links */
+        --content-links-padding: 0px;
+        --content-padding-top: 25px;
+        --content-links-display: none;
+
+        /* Content Certificate */
+        --content-certificate-width: 100%;
+
+        /* Content Skills */
+        --content-main-skills-h3-width: 40%;
+        --content-main-skills-div-width: 60%;
         --star-size: 60px;
         --star-color: grey;
         --star-background: orange;
-        --content-background: white;
     }
 }
 
@@ -745,6 +770,65 @@ td:first-child {
         --star-background: orange;
         --content-background: white;
     }
+
+
+    :root {
+        --h1-font-size: 1.9em;
+        --h2-font-size: 1.5em;
+        --h3-font-size: 1.25em;
+        --h4-font-size: 1.1em;
+        --p-font-size: 1em;
+        --content-p: 1em;
+        --content-header-h1-padding: 25px 50px 0px 25px;
+        --content-header-h2-padding: 0px 50px 0px 25px;
+
+        --global-hx-margin: 15px 0px 5px 0px;
+
+        /* Sidebar */
+        --sidebar-position: relative;
+        --sidebar-padding-top: 150px;
+        --sidebar-border: none;
+        --sidebar-width: 100%;
+        --sidebar-margin-left: 0;
+        --sidebar-width-calc: 100%;
+        --sidebar-top-wrapper-height: 150px;
+        --sidebar-profile-img-size: 125px;
+        --sidebar-profile-position-margin-left: 30px;
+        --sidebar-profile-position-margin-top: 80px;
+        --sidebar-profile-border: 2.5px;
+        --sidebar-bottom-wrapper-padding: 75px 25px 15px 25px;
+
+        /* Content Global */
+        --content-background: white;
+        --content-width: 100%;
+        --content-padding-left-right: 50px;
+        --content-padding-bottom: 25px;
+        --content-main-experience-wrapper-header-height: 100px;
+
+        /* Content Header .content-header */
+        --content-top-header-height: 150px;
+
+        /* Content Experience */
+        --content-logo-roc-width: 100px;
+        --content-logo-roc-height: 40px;
+        --content-logo-waterstons-width: 100px;
+        --content-logo-waterstons-height: 100px;
+
+        /* Content Links */
+        --content-links-padding: 0px;
+        --content-padding-top: 25px;
+        --content-links-display: inline;
+
+        /* Content Certificate */
+        --content-certificate-width: 100%;
+
+        /* Content Skills */
+        --content-main-skills-h3-width: 40%;
+        --content-main-skills-div-width: 60%;
+        --star-size: 60px;
+        --star-color: grey;
+        --star-background: orange;
+    }
 }
 
 
@@ -756,12 +840,12 @@ td:first-child {
 /* 400-799 */
 @media screen and (min-width: 400px) and (max-width: 799px) {
     :root {
-        --h1-font-size: 150%;
-        --h2-font-size: 90%;
-        --h3-font-size: 100%;
-        --h4-font-size: 100%;
-        --p-font-size: 100%;
-        --content-p: 100%;
+        --h1-font-size: 1.9em;
+        --h2-font-size: 1.1em;
+        --h3-font-size: 1.25em;
+        --h4-font-size: 1.1em;
+        --p-font-size: 1em;
+        --content-p: 1em;
         --content-header-h1-padding: 25px 50px 0px 25px;
         --content-header-h2-padding: 0px 50px 0px 25px;
 
@@ -800,6 +884,7 @@ td:first-child {
         /* Content Links */
         --content-links-padding: 15px;
         --content-padding-top: 25px;
+        --content-links-display: none;
 
         /* Content Certificate */
         --content-certificate-width: 100%;
@@ -811,21 +896,24 @@ td:first-child {
         --star-color: grey;
         --star-background: orange;
     }
-    }
-/*
-@media screen and (min-width: 400px) and (max-width: 799px) {
+}
+
+/* mobile friendly */
+/* 0-399 */
+@media screen and (min-width: 0px) and (max-width: 399px) {
     :root {
-        --h1-font-size: 150%;
-        --h2-font-size: 90%;
-        --h3-font-size: 100%;
-        --h4-font-size: 100%;
-        --p-font-size: 100%;
-        --content-p: 100%;
+        --h1-font-size: 1.1em;
+        --h2-font-size: 0.6em;
+        --h3-font-size: 0.9em;
+        --h4-font-size: 0.8em;
+        --p-font-size: 0.75em;
+        --content-p: 0.75em;
         --content-header-h1-padding: 25px 50px 0px 25px;
         --content-header-h2-padding: 0px 50px 0px 25px;
 
         --global-hx-margin: 15px 0px 5px 0px;
 
+        /* Sidebar */
         --sidebar-position: relative;
         --sidebar-padding-top: 150px;
         --sidebar-border: none;
@@ -839,71 +927,35 @@ td:first-child {
         --sidebar-profile-border: 2.5px;
         --sidebar-bottom-wrapper-padding: 75px 25px 15px 25px;
 
+        /* Content Global */
+        --content-background: white;
         --content-width: 100%;
-        --content-logo-roc-width: 100px;
-        --content-logo-roc-height: 40px;
+        --content-padding-left-right: 15px;
+        --content-padding-bottom: 0px;
+        --content-main-experience-wrapper-header-height: 100px;
+
+        /* Content Header .content-header */
         --content-top-header-height: 150px;
 
+        /* Content Experience */
+        --content-logo-roc-width: 50px;
+        --content-logo-roc-height: 20px;
+        --content-logo-waterstons-width: 40px;
+        --content-logo-waterstons-height: 40px;
 
+        /* Content Links */
         --content-links-padding: 15px;
-        --content-padding-top: calc(var(--content-top-header-height) + 25px);
+        --content-padding-top: 25px;
+        --content-links-display: none;
 
-        --content-padding-top: 0px;
-        --content-padding-left-right: 15px;
-        --content-padding-bottom: 20px;
+        /* Content Certificate */
         --content-certificate-width: 100%;
+
+        /* Content Skills */
         --content-main-skills-h3-width: 50%;
         --content-main-skills-div-width: 50%;
-
         --star-size: 30px;
         --star-color: grey;
         --star-background: orange;
-        --content-background: white;
-    }
-}*/
-
-/* mobile friendly */
-/* 0-399 */
-@media screen and (min-width: 0px) and (max-width: 399px) {
-    :root {
-        --h1-font-size: 120%;
-        --h2-font-size: 70%;
-        --h3-font-size: 60%;
-        --h4-font-size: 60%;
-        --p-font-size: 75%;
-        --content-p: 80%;
-        --content-header-h1-padding: 25px 50px 0px 25px;
-        --content-header-h2-padding: 0px 50px 0px 25px;
-
-        --global-hx-margin: 15px 0px 5px 0px;
-
-        --sidebar-position: relative;
-        --sidebar-padding-top: 125px;
-        --sidebar-border: none;
-        --sidebar-width: 100%;
-        --sidebar-margin-left: 0;
-        --sidebar-width-calc: 100%;
-        --sidebar-top-wrapper-height: 125px;
-        --sidebar-profile-img-size: 100px;
-        --sidebar-profile-position-margin-left: 10px;
-        --sidebar-profile-position-margin-top: 80px;
-        --sidebar-profile-border: 2.5px;
-        --sidebar-bottom-wrapper-padding: 75px 5px 15px 5px;
-
-        --content-width: 100%;
-        --content-logo-roc-width: 100px;
-        --content-logo-roc-height: 40px;
-        --content-top-header-height: 125px;
-        --content-padding-top: 0px;
-        --content-padding-left-right: 15px;
-        --content-padding-bottom: 20px;
-        --content-certificate-width: 100%;
-        --content-main-skills-h3-width: 50%;
-        --content-main-skills-div-width: 50%;
-
-        --star-size: 30px;
-        --star-color: grey;
-        --star-background: orange;
-        --content-background: white;
     }
 }
