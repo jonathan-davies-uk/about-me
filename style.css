@@ -10,6 +10,7 @@
 
     --global-hx-margin: 10px 0px 15px 0px;
 
+    /* Sidebar */
     --sidebar-position: fixed;
     --sidebar-padding-top: 0px;
     --sidebar-border: 4px;
@@ -23,26 +24,35 @@
     --sidebar-profile-border: 5px;
     --sidebar-bottom-wrapper-padding: 120px 25px 0px 25px;
 
+    /* Content Global */
+    --content-background: white;
     --content-width: 75%;
+    --content-padding-left-right: 50px;
+    --content-padding-bottom: 0px;
     --content-main-experience-wrapper-header-height: 100px;
+
+    /* Content Header .content-header */
+    --content-top-header-height: 200px;
+
+    /* Content Experience */
     --content-logo-roc-width: 210px;
     --content-logo-roc-height: 90px;
     --content-logo-waterstons-width: 100px;
     --content-logo-waterstons-height: 100px;
-    --content-top-header-height: 200px;
-    --content-padding-top: 225px;
-    --content-padding-var-links: 15px;
-    --content-padding-left-right: 50px;
-    --content-padding-bottom: 0px;
+
+    /* Content Links */
+    --content-links-padding: 15px;
+    --content-padding-top: calc(var(--content-top-header-height) + 25px);
+
+    /* Content Certificate */
     --content-certificate-width: 25%;
+
+    /* Content Skills */
     --content-main-skills-h3-width: 25%;
     --content-main-skills-div-width: 75%;
-
-
     --star-size: 60px;
     --star-color: grey;
     --star-background: orange;
-    --content-background: white;
 }
 
 
@@ -251,10 +261,7 @@ td:first-child {
 /**Links to my websites**/
 .content-links {
     background-color: #e7e7e7;
-    padding-top: calc(var(--content-padding-top) - var(--content-padding-var-links));
-    padding-left: var(--content-padding-left-right);
-    padding-right: var(--content-padding-left-right);
-    padding-bottom: calc(var(--content-padding-bottom) + var(--content-padding-var-links));
+    padding: calc(var(--content-padding-top) - var(--content-links-padding)) var(--content-padding-left-right) calc(var(--content-padding-bottom) + var(--content-links-padding)) var(--content-padding-left-right);
     border-bottom: 1px solid rgba(255, 165, 0, 16%);
 }
 .content-links img {
@@ -276,9 +283,10 @@ td:first-child {
     color: var(--star-background);
 }
 
+
 /**Main Content Wrapper**/
 .content-main {
-    padding-top: var(--content-padding-var-links);
+    padding-top: var(--content-links-padding);
     padding-left: var(--content-padding-left-right);
     padding-right: var(--content-padding-left-right);
     padding-bottom: var(--content-padding-bottom);
@@ -526,7 +534,7 @@ td:first-child {
     padding-left: var(--content-padding-left-right);
     padding-right: var(--content-padding-left-right);
     padding-bottom: var(--content-padding-bottom);
-    padding-top: var(--content-padding-var-links);
+    padding-top: var(--content-links-padding);
     background-color: var(--content-background);
     float: left;
 }
@@ -759,6 +767,65 @@ td:first-child {
 
         --global-hx-margin: 15px 0px 5px 0px;
 
+        /* Sidebar */
+        --sidebar-position: relative;
+        --sidebar-padding-top: 150px;
+        --sidebar-border: none;
+        --sidebar-width: 100%;
+        --sidebar-margin-left: 0;
+        --sidebar-width-calc: 100%;
+        --sidebar-top-wrapper-height: 150px;
+        --sidebar-profile-img-size: 125px;
+        --sidebar-profile-position-margin-left: 30px;
+        --sidebar-profile-position-margin-top: 80px;
+        --sidebar-profile-border: 2.5px;
+        --sidebar-bottom-wrapper-padding: 75px 25px 15px 25px;
+
+        /* Content Global */
+        --content-background: white;
+        --content-width: 100%;
+        --content-padding-left-right: 15px;
+        --content-padding-bottom: 0px;
+        --content-main-experience-wrapper-header-height: 100px;
+
+        /* Content Header .content-header */
+        --content-top-header-height: 150px;
+
+        /* Content Experience */
+        --content-logo-roc-width: 100px;
+        --content-logo-roc-height: 40px;
+        --content-logo-waterstons-width: 100px;
+        --content-logo-waterstons-height: 100px;
+
+        /* Content Links */
+        --content-links-padding: 15px;
+        --content-padding-top: 25px;
+
+        /* Content Certificate */
+        --content-certificate-width: 100%;
+
+        /* Content Skills */
+        --content-main-skills-h3-width: 50%;
+        --content-main-skills-div-width: 50%;
+        --star-size: 30px;
+        --star-color: grey;
+        --star-background: orange;
+    }
+    }
+/*
+@media screen and (min-width: 400px) and (max-width: 799px) {
+    :root {
+        --h1-font-size: 150%;
+        --h2-font-size: 90%;
+        --h3-font-size: 100%;
+        --h4-font-size: 100%;
+        --p-font-size: 100%;
+        --content-p: 100%;
+        --content-header-h1-padding: 25px 50px 0px 25px;
+        --content-header-h2-padding: 0px 50px 0px 25px;
+
+        --global-hx-margin: 15px 0px 5px 0px;
+
         --sidebar-position: relative;
         --sidebar-padding-top: 150px;
         --sidebar-border: none;
@@ -776,6 +843,11 @@ td:first-child {
         --content-logo-roc-width: 100px;
         --content-logo-roc-height: 40px;
         --content-top-header-height: 150px;
+
+
+        --content-links-padding: 15px;
+        --content-padding-top: calc(var(--content-top-header-height) + 25px);
+
         --content-padding-top: 0px;
         --content-padding-left-right: 15px;
         --content-padding-bottom: 20px;
@@ -788,7 +860,7 @@ td:first-child {
         --star-background: orange;
         --content-background: white;
     }
-}
+}*/
 
 /* mobile friendly */
 /* 0-399 */
