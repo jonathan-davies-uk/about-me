@@ -200,7 +200,7 @@ td:first-child {
 .sidebar-top-image {
     width: var(--sidebar-profile-img-size);
     height: var(--sidebar-profile-img-size);
-    border: var(--sidebar-profile-border) solid #f1f1f1;
+    
     margin-left: var(--sidebar-profile-position-margin-left);
     margin-top: var(--sidebar-profile-position-margin-top);
     border-radius: 50%;
