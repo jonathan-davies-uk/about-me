@@ -278,6 +278,7 @@ td:first-child {
     color: red !important;
     font-weight: bolder;
     background-color: rgba(255, 0, 0, 0.116);
+    padding: 5px;
 }
 
 .content-links a:first-of-type:hover {
