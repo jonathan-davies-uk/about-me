@@ -275,7 +275,7 @@ td:first-child {
 }
 
 .content-links a:first-of-type {
-    color: red;
+    color: red !important;
     font-weight: bolder;
     background-color: rgba(255, 0, 0, 0.116);
 }
