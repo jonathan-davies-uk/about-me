@@ -273,6 +273,13 @@ td:first-child {
     width: 20px;
     height: 20px;
 }
+
+.content-links a:first-of-type {
+    color: red;
+    font-weight: bolder;
+    background-color: rgba(255, 0, 0, 0.116);
+}
+
 .content-links a:not(:first-of-type) {
     padding-left: 25px;
 }
