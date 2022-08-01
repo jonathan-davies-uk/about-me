@@ -280,6 +280,11 @@ td:first-child {
     background-color: rgba(255, 0, 0, 0.116);
 }
 
+.content-links a:first-of-type:hover {
+    color: orange !important;
+    background-color: black;
+}
+
 .content-links a:not(:first-of-type) {
     padding-left: 25px;
 }
