@@ -1,4 +1,2 @@
 User-agent: *
 Disallow: /no-tracking/*
-Disallow: /no-tracking
-Disallow: /no-tracking/
